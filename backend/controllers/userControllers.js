@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const generateToken = (user) => {
   return jwt.sign(
-    { id: user._id, role: user.role },
+    { id: user._id },
     process.env.JWT_SECRET,
     { expiresIn: "3d" }
   );
@@ -12,8 +12,8 @@ const generateToken = (user) => {
 
 const register = async (req,res)=>{
     try {
-        const {username,email,password,role} = req.body;
-        const user = new User({username,email,password,role});
+        const {username,email,password} = req.body;
+        const user = new User({username,email,password});
         await user.save();
         res.status(201).json({message:"user registered"});
     } catch (err) {
@@ -36,7 +36,7 @@ const login = async(req,res)=>{
         }
         const token = generateToken(user);
         res.cookie('token',token);
-        res.json({ message: "Login successful", user: { id: user._id, role: user.role } });
+        res.json({ message: "Login successful", user: { id: user._id} });
     } catch (err) {
         res.status(500).json({error : err.message});
     }
