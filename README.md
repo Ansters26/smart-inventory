@@ -12,7 +12,31 @@ A full-stack, backend-heavy inventory management system built to track product s
 🎯 Features shown: Product CRUD, Authentication, Transactions, Demand Forecasting with Graphs
 
 ---
+## 🗂️ Project Structure
 
+```
+/backend
+├── config/           # Environment configs, DB connection
+├── controllers/      # Route logic (products, auth, transactions, forecast)
+├── middlewares/      # Auth, error handling, validation
+├── models/           # Mongoose schemas (User, Product, Transaction)
+├── routes/           # Express route definitions
+├── services/         # Business logic, forecasting, helpers
+├── utils/            # Utility functions, constants
+└── app.js            # Main Express app entry
+
+/frontend
+├── public/           # Static assets (favicon, images)
+├── src/
+│   ├── components/   # Reusable UI components (tables, modals, charts)
+│   ├── pages/        # Route-based pages (Dashboard, Products, etc.)
+│   ├── services/     # API calls, data fetching
+│   ├── hooks/        # Custom React hooks
+│   ├── utils/        # Frontend helpers, constants
+│   ├── styles/       # Tailwind config, custom CSS
+│   └── App.jsx       # Main React app entry
+└── package.json      # Frontend dependencies
+```
 ## 📂 Project Structure
 
 /backend
