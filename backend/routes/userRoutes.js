@@ -6,6 +6,9 @@ const router = express.Router();
 
 router.post('/register',register)
 .post('/login',login)
-.post('/logout',isAuthenticated,logout);
+.post('/logout',isAuthenticated,logout)
+.get("/check-auth", isAuthenticated, (req, res) => {
+  res.status(200).json({ authenticated: true });
+});
 
 module.exports = router;

@@ -4,6 +4,6 @@ const { isAuthenticated } = require('../middleware/Auth');
 const router = express.Router();
 
 
-router.get('/low-stocks-alert',isAuthenticated,lowStockAlerts);
+router.get('/',isAuthenticated,lowStockAlerts);
 
 module.exports = router;
