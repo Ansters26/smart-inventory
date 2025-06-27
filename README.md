@@ -37,21 +37,6 @@ A full-stack, backend-heavy inventory management system built to track product s
 │   └── App.jsx       # Main React app entry
 └── package.json      # Frontend dependencies
 ```
-## 📂 Project Structure
-
-/backend
-├── models/
-├── routes/
-├── controllers/
-├── middlewares/
-└── services/
-
-/frontend
-├── components/
-├── pages/
-└── services/
-
----
 
 ## 🚧 Features Implemented
 
