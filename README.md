@@ -8,7 +8,7 @@ A full-stack, backend-heavy inventory management system built to track product s
 
 ## 📸 Demo
 
-🖥️ **[Demo Video Link Placeholder]**  
+🖥️ **[(https://youtu.be/g6KSHLl0BCI)]**  
 🎯 Features shown: Product CRUD, Authentication, Transactions, Demand Forecasting with Graphs
 
 ---
@@ -44,7 +44,6 @@ A full-stack, backend-heavy inventory management system built to track product s
 - JWT-based secure login/register APIs.
 - HTTP-only cookie storage for session security.
 - `isAuthenticated` middleware to protect APIs.
-- Role-based access simplified to allow only authorized users to access core resources.
 
 ---
 
