@@ -27,10 +27,6 @@ A full-stack, backend-heavy inventory management system built to track product s
 ├── pages/
 └── services/
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🚧 Features Implemented
@@ -143,4 +139,4 @@ All major features implemented and tested with mock and real transaction data.
 ## 🙌 Author
 
 **Atharva Pandey**  
-📫 [LinkedIn](https://www.linkedin.com/in/atharva-pandey/) | 📧 your.email@example.com
+📫 [LinkedIn](https://www.linkedin.com/in/atharva-pandey/)
